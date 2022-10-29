@@ -11,13 +11,6 @@ import {
   SpikaWalletAdapter,
   FletchWalletAdapter,
   AptosSnapAdapter,
-  NightlyWalletAdapter,
-  BitkeepWalletAdapter,
-  TokenPocketWalletAdapter,
-  BloctoWalletAdapter,
-  WalletAdapterNetwork,
-  Coin98WalletAdapter,
-  FoxWalletAdapter
 } from '@manahippo/aptos-wallet-adapter';
 import { useMemo } from 'react';
 import { message } from 'antd';
@@ -34,12 +27,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       new SpikaWalletAdapter(),
       new FletchWalletAdapter(),
       new AptosSnapAdapter(),
-      new NightlyWalletAdapter(),
-      new BitkeepWalletAdapter(),
-      new TokenPocketWalletAdapter(),
-      new BloctoWalletAdapter({ network:WalletAdapterNetwork.Testnet }),
-      new Coin98WalletAdapter(),
-      new FoxWalletAdapter()
     ],
     []
   );
